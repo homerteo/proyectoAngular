@@ -6,9 +6,7 @@
                                                  'ui.bootstrap',
                                                  'ngStorage',
                                                  'toaster',
-                                                 'peopleManager.person',
-                                                 'peopleManager.login',
-                                                 'peopleManager.error']);
+                                                 'peopleManager.login']);
 
   // Ruta por default
   mainApp.run(['$state', function ($state) {
@@ -21,7 +19,7 @@
         $stateProvider
           .state('login', {
               url: '/login',
-              templateUrl: '/login/views/login.html',
+              templateUrl: './components/login/views/loginView.html',
               controller: 'loginController'
           })
           .state('newaccount', {

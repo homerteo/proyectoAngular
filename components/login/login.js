@@ -1,3 +1,3 @@
 (function () {
-  var person = angular.module('peopleManager.login', []);
+  var login = angular.module('peopleManager.login', []);
 })();

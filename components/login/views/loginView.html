@@ -1,0 +1,38 @@
+<div class="login-wrapped">
+  <div class="row">
+    <div class="col-md-2">
+      <!-- espacio vacío -->
+    </div>
+    <div class="col-xs-8 col-md-8">
+      <form ng-submit="login()">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="username">email:</label>
+          </div>
+          <div class="col-md-6">
+            <input type="text" name="email" ng-model="email">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <label for="password">password:</label>
+          </div>
+          <div class="col-md-6">
+            <input type="password" name="password" ng-model="password">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <button class="btn btn-primary" type="submit">Login</button>
+          </div>
+          <div class="col-md-6">
+            <button class="btn btn-default" type="reset">Cancel</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-2">
+      <!-- espacio vacío -->
+    </div>
+  </div>
+</div>
