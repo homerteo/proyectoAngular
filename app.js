@@ -7,8 +7,7 @@
                                                  'ngStorage',
                                                  'toaster',
                                                  'peopleManager.person',
-                                                 'peopleManager.login',
-                                                 'peopleManager.error']);
+                                                 'peopleManager.login']);
 
   // Ruta por default
   mainApp.run(['$state', function ($state) {
@@ -43,11 +42,6 @@
             url: '/people/:id',
               templateUrl: './components/person/views/showPerson.html',
               controller: 'peopleController'
-          })
-          .state('error', {
-            url: '/error',
-              templateUrl: './components/error/views/error.html',
-              controller: 'errorController'
           })
         $urlRouterProvider.otherwise('login');
     }]);
